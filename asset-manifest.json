@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/gymwhere-website/static/css/main.de06783e.css",
+    "main.js": "/gymwhere-website/static/js/main.41d2f3e1.js",
+    "static/js/453.1757854f.chunk.js": "/gymwhere-website/static/js/453.1757854f.chunk.js",
+    "static/media/landing2.jpg": "/gymwhere-website/static/media/landing2.b1a3ec8ed46ae789016e.jpg",
+    "index.html": "/gymwhere-website/index.html",
+    "main.de06783e.css.map": "/gymwhere-website/static/css/main.de06783e.css.map",
+    "main.41d2f3e1.js.map": "/gymwhere-website/static/js/main.41d2f3e1.js.map",
+    "453.1757854f.chunk.js.map": "/gymwhere-website/static/js/453.1757854f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de06783e.css",
+    "static/js/main.41d2f3e1.js"
+  ]
+}
