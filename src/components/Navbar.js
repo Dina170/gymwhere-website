@@ -14,13 +14,18 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import useScrollPosition from "../hooks/useScrollPosition";
+import LanguageIcon from "@mui/icons-material/Language";
+import { Stack } from "@mui/material";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 const drawerWidth = 240;
-const navItems = ["Home", "About", "Contact"];
+const navItems = ["Home", "Discover", "nutrition Plans", "personal training"];
 
 function Navbar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const scrollPosition = useScrollPosition();
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -53,9 +58,13 @@ function Navbar(props) {
       <AppBar
         component="nav"
         sx={{
-          backgroundColor: "transparent",
+          bgcolor: scrollPosition > 10 ? "rgba(0,0,0,.7)" : "transparent",
+          backdropFilter: scrollPosition > 10 && "blur(60px)",
           color: "black",
-          padding: { sm: "5px", md: "60px 100px" },
+          padding: {
+            sm: "5px",
+            md: scrollPosition > 10 ? "10px 80px" : "60px 80px",
+          },
         }}
         elevation={0}
       >
@@ -76,6 +85,7 @@ function Navbar(props) {
           >
             MUI
           </Typography> */}
+
           <img
             src="./images/logoWithLettersWhite.png"
             alt="logo"
@@ -87,12 +97,47 @@ function Navbar(props) {
               padding: "10px 0",
             }}
           />
+          <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
+              <Button
+                key={item}
+                sx={{ color: "#fff", fontSize: 15 }}
+                onClick={() => {
+                  const element = document.getElementById(`${item}`);
+                  element.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 {item}
               </Button>
             ))}
+          </Box>
+          <Box sx={{ flexGrow: 1 }} />
+          <Box>
+            <Button sx={{ color: "white", m: 2 }}>
+              <LanguageIcon fontSize="medium" sx={{ m: 1 }} />
+              <Typography variant="body2">EN</Typography>
+            </Button>
+            <Button
+              variant="contained"
+              sx={{
+                borderRadius: "10px",
+                backgroundColor: "#f29603",
+                p: 1,
+                fontSize: "1.1em",
+                fontWeight: "bold",
+                letterSpacing: "1px",
+                transition: "0.3s ease",
+                ml: { xs: 2, sm: 1 },
+              }}
+              className="main-btn"
+              onClick={() => {
+                const pricing = document.getElementById("pricing");
+                pricing.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Subscripe <KeyboardArrowRightIcon />
+            </Button>
           </Box>
         </Toolbar>
       </AppBar>
