@@ -13,7 +13,7 @@ function Footer() {
       >
         <Box>
           <img
-            src="./gymwhere-website/images/logoWithLettersWhite.png"
+            src="./images/logoWithLettersWhite.png"
             alt="logo"
             style={{
               // flexGrow: 1,

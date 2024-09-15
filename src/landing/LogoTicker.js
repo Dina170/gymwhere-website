@@ -41,73 +41,73 @@ function LogoTicker() {
             }}
           >
             <img
-              src="./gymwhere-website/images/gym1.jpg"
+              src="./images/gym1.jpg"
               alt="gym logo"
               width="110px"
               height="90px"
             />
             <img
-              src="./gymwhere-website/images/66_barbel.jpg"
+              src="./images/66_barbel.jpg"
               alt="gym logo"
               width="110px"
               height="90px"
             />
             <img
-              src="./gymwhere-website/images/gym3.jpg"
+              src="./images/gym3.jpg"
               alt="gym logo"
               width="110px"
               height="90px"
             />
             <img
-              src="./gymwhere-website/images/gym1.jpg"
+              src="./images/gym1.jpg"
               alt="gym logo"
               width="110px"
               height="90px"
             />
             <img
-              src="./gymwhere-website/images/66_barbel.jpg"
+              src="./images/66_barbel.jpg"
               alt="gym logo"
               width="110px"
               height="90px"
             />
             <img
-              src="./gymwhere-website/images/gym3.jpg"
+              src="./images/gym3.jpg"
               alt="gym logo"
               width="110px"
               height="90px"
             />
             <img
-              src="./gymwhere-website/images/gym1.jpg"
+              src="./images/gym1.jpg"
               alt="gym logo"
               width="110px"
               height="90px"
             />
             <img
-              src="./gymwhere-website/images/66_barbel.jpg"
+              src="./images/66_barbel.jpg"
               alt="gym logo"
               width="110px"
               height="90px"
             />
             <img
-              src="./gymwhere-website/images/gym3.jpg"
+              src="./images/gym3.jpg"
               alt="gym logo"
               width="110px"
               height="90px"
             />
             <img
-              src="./gymwhere-website/images/gym1.jpg"
+              src="./images/gym1.jpg"
               alt="gym logo"
               width="110px"
               height="90px"
             />
             <img
-              src="./gymwhere-website/images/66_barbel.jpg"
+              src="./images/66_barbel.jpg"
               alt="gym logo"
               width="110px"
               height="90px"
             />
             <img
-              src="./gymwhere-website/images/gym3.jpg"
+              src="./images/gym3.jpg"
               alt="gym logo"
               width="110px"
               height="90px"
