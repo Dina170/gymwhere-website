@@ -6,14 +6,14 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div>
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/gymwhere-website" element={<Landing />} />
         <Route path="/demo" element={<Demo />} />
         <Route path="/gymwhere-website/demo" element={<Demo />} />
-      </Routes>
+      </Routes> */}
       {/* <Landing /> */}
-      {/* <Demo /> */}
+      <Demo />
     </div>
   );
 }
