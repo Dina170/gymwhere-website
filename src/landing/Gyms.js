@@ -32,7 +32,7 @@ function Gyms() {
             <article class="card__article swiper-slide">
               <div class="card__image">
                 <img
-                  src="./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
+                  src="./gymwhere-website/images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
                   alt="gym"
                   class="card__img"
                 />
@@ -56,7 +56,7 @@ function Gyms() {
             <article class="card__article swiper-slide">
               <div class="card__image">
                 <img
-                  src="./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
+                  src="./gymwhere-website/images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
                   alt="gym"
                   class="card__img"
                 />
@@ -80,7 +80,7 @@ function Gyms() {
             <article class="card__article swiper-slide">
               <div class="card__image">
                 <img
-                  src="./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
+                  src="./gymwhere-website/images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
                   alt="gym"
                   class="card__img"
                 />
@@ -104,7 +104,7 @@ function Gyms() {
             <article class="card__article swiper-slide">
               <div class="card__image">
                 <img
-                  src="./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
+                  src="./gymwhere-website/images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
                   alt="gym"
                   class="card__img"
                 />

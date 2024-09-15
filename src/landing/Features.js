@@ -28,7 +28,7 @@ function Features() {
         >
           <Box className="feature-img">
             <img
-              src="./images/woman-helping-man-gym.jpg"
+              src="./gymwhere-website/images/woman-helping-man-gym.jpg"
               alt="features"
               width={"500px"}
             />
