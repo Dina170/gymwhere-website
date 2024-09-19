@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/gymwhere-website/static/css/main.930323cf.css",
-    "main.js": "/gymwhere-website/static/js/main.54545e7e.js",
+    "main.css": "/gymwhere-website/static/css/main.1f0e9f3d.css",
+    "main.js": "/gymwhere-website/static/js/main.e8395afe.js",
     "static/js/453.1757854f.chunk.js": "/gymwhere-website/static/js/453.1757854f.chunk.js",
     "static/media/landing2.jpg": "/gymwhere-website/static/media/landing2.b1a3ec8ed46ae789016e.jpg",
     "static/media/Desktop - 1.png": "/gymwhere-website/static/media/Desktop - 1.89eac6715d987ae8b652.png",
     "index.html": "/gymwhere-website/index.html",
-    "main.930323cf.css.map": "/gymwhere-website/static/css/main.930323cf.css.map",
-    "main.54545e7e.js.map": "/gymwhere-website/static/js/main.54545e7e.js.map",
+    "main.1f0e9f3d.css.map": "/gymwhere-website/static/css/main.1f0e9f3d.css.map",
+    "main.e8395afe.js.map": "/gymwhere-website/static/js/main.e8395afe.js.map",
     "453.1757854f.chunk.js.map": "/gymwhere-website/static/js/453.1757854f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.930323cf.css",
-    "static/js/main.54545e7e.js"
+    "static/css/main.1f0e9f3d.css",
+    "static/js/main.e8395afe.js"
   ]
 }
