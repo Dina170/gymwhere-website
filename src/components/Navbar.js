@@ -21,7 +21,7 @@ import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { useNavigate } from "react-router-dom";
 
 const drawerWidth = 240;
-const navItems = ["Home", "Discover", "nutrition Plans", "personal training"];
+const navItems = ["Home", "Discover", "Nutrition Plans", "Rersonal Training"];
 
 function Navbar(props) {
   const { window } = props;
@@ -36,7 +36,7 @@ function Navbar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        GymWhere
       </Typography>
       <Divider />
       <List>
@@ -64,8 +64,8 @@ function Navbar(props) {
           backdropFilter: scrollPosition > 10 && "blur(60px)",
           color: "black",
           padding: {
-            sm: "5px",
-            md: scrollPosition > 10 ? "10px 80px" : "60px 80px",
+            xs: "10px",
+            lg: scrollPosition > 10 ? "10px 80px" : "60px 80px",
           },
         }}
         elevation={0}
@@ -76,7 +76,7 @@ function Navbar(props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" }, color: "white" }}
+            sx={{ mr: 2, display: { lg: "none" }, color: "white" }}
           >
             <MenuIcon />
           </IconButton>
@@ -87,20 +87,25 @@ function Navbar(props) {
           >
             MUI
           </Typography> */}
-
-          <img
-            src="./images/logoWithLettersWhite.png"
-            alt="logo"
-            style={{
-              // flexGrow: 1,
+          <Box
+            sx={{
               display: { xs: "none", sm: "block" },
-              width: "250px",
+              width: { xs: "150px", md: "200px", xl: "250px" },
               marginRight: "auto",
               padding: "10px 0",
             }}
-          />
+          >
+            <img
+              src="./images/logoWithLettersWhite.png"
+              alt="logo"
+              style={{
+                // flexGrow: 1,
+                width: "inherit",
+              }}
+            />
+          </Box>
           <Box sx={{ flexGrow: 1 }} />
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          <Box sx={{ display: { xs: "none", lg: "block" } }}>
             {navItems.map((item) => (
               <Button
                 key={item}
@@ -116,7 +121,7 @@ function Navbar(props) {
           </Box>
           <Box sx={{ flexGrow: 1 }} />
           <Box>
-            <Button sx={{ color: "white", m: 2 }}>
+            <Button sx={{ color: "white", m: { xs: 1, sm: 2 } }}>
               <LanguageIcon fontSize="medium" sx={{ m: 1 }} />
               <Typography variant="body2">EN</Typography>
             </Button>
@@ -126,15 +131,15 @@ function Navbar(props) {
                 borderRadius: "10px",
                 backgroundColor: "#f29603",
                 p: 1,
-                fontSize: "1.1em",
+                fontSize: { xs: "0.9em", lg: "1.1em" },
                 fontWeight: "bold",
                 letterSpacing: "1px",
                 transition: "0.3s ease",
-                ml: { xs: 2, sm: 1 },
+                ml: { sm: 1 },
               }}
               className="main-btn"
               onClick={() => {
-                nav("/gymwhere-website/demo");
+                nav("/demo");
               }}
             >
               Get Voucher <KeyboardArrowRightIcon />
@@ -152,7 +157,7 @@ function Navbar(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "block", lg: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,

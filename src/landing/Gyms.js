@@ -1,6 +1,13 @@
-import { Container, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+
+// import required modules
+import { Navigation } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/swiper-bundle.css";
@@ -10,253 +17,129 @@ function Gyms() {
     <div
       id="Discover"
       className="black-section"
-      style={{ backgroundColor: "#393937" }}
+      style={{ backgroundColor: "#252525" }}
     >
       <Container maxWidth="sm">
-        <Typography variant="h4" align="center" gutterBottom>
-          Featured Gyms
+        <Typography variant="h4" align="center" color="white" gutterBottom>
+          FEATURED GYMS
         </Typography>
         <Typography align="center" component={"p"} className="special-p">
           Access multiple top gyms through one application
         </Typography>
       </Container>
-      <section class="container">
-        <Swiper
-          spaceBetween={50}
-          slidesPerView={3}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-          className="card__container swiper"
-        >
-          <SwiperSlide>
-            <article class="card__article swiper-slide">
-              <div class="card__image">
-                <img
-                  src="./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
-                  alt="gym"
-                  class="card__img"
-                />
-                <div class="card__shadow"></div>
-              </div>
 
-              <div class="card__data">
-                <h3 class="card__name">Gym name</h3>
-                <p class="card__description">
-                  Description about gym description about gym description about
-                  gym
-                </p>
-
-                <a href="#" class="card__button">
-                  View More
-                </a>
-              </div>
-            </article>
-          </SwiperSlide>
-          <SwiperSlide>
-            <article class="card__article swiper-slide">
-              <div class="card__image">
-                <img
-                  src="./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
-                  alt="gym"
-                  class="card__img"
-                />
-                <div class="card__shadow"></div>
-              </div>
-
-              <div class="card__data">
-                <h3 class="card__name">Gym name</h3>
-                <p class="card__description">
-                  Description about gym description about gym description about
-                  gym
-                </p>
-
-                <a href="#" class="card__button">
-                  View More
-                </a>
-              </div>
-            </article>
-          </SwiperSlide>
-          <SwiperSlide>
-            <article class="card__article swiper-slide">
-              <div class="card__image">
-                <img
-                  src="./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
-                  alt="gym"
-                  class="card__img"
-                />
-                <div class="card__shadow"></div>
-              </div>
-
-              <div class="card__data">
-                <h3 class="card__name">Gym name</h3>
-                <p class="card__description">
-                  Description about gym description about gym description about
-                  gym
-                </p>
-
-                <a href="#" class="card__button">
-                  View More
-                </a>
-              </div>
-            </article>
-          </SwiperSlide>
-          <SwiperSlide>
-            <article class="card__article swiper-slide">
-              <div class="card__image">
-                <img
-                  src="./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
-                  alt="gym"
-                  class="card__img"
-                />
-                <div class="card__shadow"></div>
-              </div>
-
-              <div class="card__data">
-                <h3 class="card__name">Gym name</h3>
-                <p class="card__description">
-                  Description about gym description about gym description about
-                  gym
-                </p>
-
-                <a href="#" class="card__button">
-                  View More
-                </a>
-              </div>
-            </article>
-          </SwiperSlide>
-          ...
-        </Swiper>
-        {/* <div class="card__container swiper">
-          <div class="card__content">
-            <div class="swiper-wrapper">
-              <article class="card__article swiper-slide">
-                <div class="card__image">
-                  <img
-                    src="./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
-                    alt="gym"
-                    class="card__img"
-                  />
-                  <div class="card__shadow"></div>
-                </div>
-
-                <div class="card__data">
-                  <h3 class="card__name">Gym name</h3>
-                  <p class="card__description">
-                    Passionate about development and design, I carry out
-                    projects at the request of users.
-                  </p>
-
-                  <a href="#" class="card__button">
-                    View More
-                  </a>
-                </div>
-              </article>
-
-              <article class="card__article swiper-slide">
-                <div class="card__image">
-                  <img
-                    src="./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
-                    alt="gym"
-                    class="card__img"
-                  />
-                  <div class="card__shadow"></div>
-                </div>
-
-                <div class="card__data">
-                  <h3 class="card__name">Lotw Fox</h3>
-                  <p class="card__description">
-                    Passionate about development and design, I carry out
-                    projects at the request of users.
-                  </p>
-
-                  <a href="#" class="card__button">
-                    View More
-                  </a>
-                </div>
-              </article>
-
-              <article class="card__article swiper-slide">
-                <div class="card__image">
-                  <img
-                    src="./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
-                    alt="gym"
-                    class="card__img"
-                  />
-                  <div class="card__shadow"></div>
-                </div>
-
-                <div class="card__data">
-                  <h3 class="card__name">Sara Mit</h3>
-                  <p class="card__description">
-                    Passionate about development and design, I carry out
-                    projects at the request of users.
-                  </p>
-
-                  <a href="#" class="card__button">
-                    View More
-                  </a>
-                </div>
-              </article>
-
-              <article class="card__article swiper-slide">
-                <div class="card__image">
-                  <img
-                    src="./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
-                    alt="gym"
-                    class="card__img"
-                  />
-                  <div class="card__shadow"></div>
-                </div>
-
-                <div class="card__data">
-                  <h3 class="card__name">Jenny Wert</h3>
-                  <p class="card__description">
-                    Passionate about development and design, I carry out
-                    projects at the request of users.
-                  </p>
-
-                  <a href="#" class="card__button">
-                    View More
-                  </a>
-                </div>
-              </article>
-
-              <article class="card__article swiper-slide">
-                <div class="card__image">
-                  <img
-                    src="./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
-                    alt="gym"
-                    class="card__img"
-                  />
-                  <div class="card__shadow"></div>
-                </div>
-
-                <div class="card__data">
-                  <h3 class="card__name">Lexa Kin</h3>
-                  <p class="card__description">
-                    Passionate about development and design, I carry out
-                    projects at the request of users.
-                  </p>
-
-                  <a href="#" class="card__button">
-                    View More
-                  </a>
-                </div>
-              </article>
+      <Swiper
+        navigation={true}
+        modules={[Navigation]}
+        spaceBetween={50}
+        // slidesPerView={3}
+        grabCursor={true}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+          },
+          650: {
+            slidesPerView: 2,
+          },
+          991: {
+            slidesPerView: 3,
+          },
+        }}
+        className="card__container swiper"
+      >
+        <SwiperSlide>
+          <article className="card__article swiper-slide">
+            <div className="card__image">
+              <img
+                src="./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
+                alt="gym"
+                className="card__img"
+              />
             </div>
-          </div>
 
-          <div class="swiper-button-next">
-            <i class="ri-arrow-right-s-line"></i>
-          </div>
+            <div className="card__data">
+              <h3 className="card__name">Gym name 1</h3>
+              <p className="card__description">
+                Description about gym description about gym description about
+                gym
+              </p>
 
-          <div class="swiper-button-prev">
-            <i class="ri-arrow-left-s-line"></i>
-          </div>
+              <a href="#" className="card__button">
+                View More
+              </a>
+            </div>
+          </article>
+        </SwiperSlide>
+        <SwiperSlide>
+          <article className="card__article swiper-slide">
+            <div className="card__image">
+              <img
+                src="./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
+                alt="gym"
+                className="card__img"
+              />
+            </div>
 
-          <div class="swiper-pagination"></div>
-        </div> */}
-      </section>
+            <div className="card__data">
+              <h3 className="card__name">Gym name 2</h3>
+              <p className="card__description">
+                Description about gym description about gym description about
+                gym
+              </p>
+
+              <a href="#" className="card__button">
+                View More
+              </a>
+            </div>
+          </article>
+        </SwiperSlide>
+        <SwiperSlide>
+          <article className="card__article swiper-slide">
+            <div className="card__image">
+              <img
+                src="./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
+                alt="gym"
+                className="card__img"
+              />
+            </div>
+
+            <div className="card__data">
+              <h3 className="card__name">Gym name 3</h3>
+              <p className="card__description">
+                Description about gym description about gym description about
+                gym
+              </p>
+
+              <a href="#" className="card__button">
+                View More
+              </a>
+            </div>
+          </article>
+        </SwiperSlide>
+        <SwiperSlide>
+          <article className="card__article swiper-slide">
+            <div className="card__image">
+              <img
+                src="./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
+                alt="gym"
+                className="card__img"
+              />
+            </div>
+
+            <div className="card__data">
+              <h3 className="card__name">Gym name 4</h3>
+              <p className="card__description">
+                Description about gym description about gym description about
+                gym
+              </p>
+
+              <a href="#" className="card__button">
+                View More
+              </a>
+            </div>
+          </article>
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 }

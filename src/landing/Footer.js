@@ -1,5 +1,8 @@
 import { Box, Container } from "@mui/material";
 import React from "react";
+import XIcon from "@mui/icons-material/X";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 function Footer() {
   return (
@@ -23,7 +26,7 @@ function Footer() {
               padding: "10px 0",
             }}
           />
-          <p style={{ color: "white", marginBottom: "50px", width: "300px" }}>
+          <p style={{ color: "#d2d2d2", marginBottom: "50px", width: "300px" }}>
             Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo,
             lacinia eget consectetur sed, convallis at tellus.
           </p>
@@ -64,7 +67,7 @@ function Footer() {
             <h3 class="text-light">Contact Us</h3>
             <p
               class="lh-lg mt-3 mb-5"
-              style={{ width: "200px", color: "#a8a7a7", marginBottom: "30px" }}
+              style={{ width: "350px", color: "#d2d2d2", marginBottom: "60px" }}
             >
               Get in touch with us via mail phone.We are waiting for your call
               or message
@@ -72,28 +75,28 @@ function Footer() {
             <a
               style={{
                 backgroundColor: "#f29603",
-                color: "white",
-                padding: "10px 40px",
-                borderRadius: "20px",
+                color: "black",
+                padding: "0.6rem 5rem",
+                borderRadius: "25px",
               }}
               href="#"
             >
               GymWhere@gmail.com
             </a>
-            <ul class="d-flex mt-5 list-unstyled gap-3">
+            <ul class="icons">
               <li>
                 <a class="d-block text-light" href="#">
-                  <i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i>
+                  <XIcon />
                 </a>
               </li>
               <li>
                 <a class="d-block text-light" href="#">
-                  <i class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></i>
+                  <FacebookIcon />
                 </a>
               </li>
               <li>
                 <a class="d-block text-light" href="#">
-                  <i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i>
+                  <LinkedInIcon />
                 </a>
               </li>
               <li>
