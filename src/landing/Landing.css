@@ -1,7 +1,6 @@
 .landing {
   background-image: url("../../public/images/landing2.jpg");
   background-repeat: no-repeat;
-  width: 100vw;
   position: relative;
   background-size: cover;
   background-position: center;
