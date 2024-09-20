@@ -1,27 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Box, Typography } from "@mui/material";
+import useIsSmallScreen from "../hooks/useIsSmallScreen";
 
 function Slider() {
+  const isSmallScreen = useIsSmallScreen();
+  console.log(isSmallScreen);
   return (
-    <div
-      style={{
+    <Box
+      sx={{
         position: "relative",
-        height: "200vh",
+        height: { xs: "auto", sm: "200vh" },
+        width: { xs: "100vw", sm: "auto" },
         overflow: "hidden",
-        maskImage:
-          "linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 90%,rgba(255, 255, 255, 0) 100%)",
+        p: { xs: 2, sm: 0 },
+        maskImage: {
+          xs: "linear-gradient(to right,transparent 0%, black 20%,black 80%, transparent 100%)",
+          sm: "linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 90%,rgba(255, 255, 255, 0) 100%)",
+        },
       }}
     >
-      <motion.div
+      <motion.Box
         style={{
           display: "flex",
           gap: "30px",
           justifyContent: "center",
-          flexGrow: 1,
+          flexDirection: { xs: "row", sm: "column" },
+          width: { xs: "100%", sm: "inherit" },
+          flex: "none",
+          paddingRight: "30px",
         }}
         animate={{
-          translateY: "-50%",
+          translateX: isSmallScreen ? "-400%" : 0,
+          translateY: isSmallScreen ? 0 : "-50%",
         }}
         transition={{
           duration: 10,
@@ -33,7 +44,7 @@ function Slider() {
         <Box
           sx={{
             display: "flex",
-            flexDirection: "column",
+            flexDirection: { xs: "row", sm: "column" },
             gap: 3,
             alignItems: "center",
           }}
@@ -283,7 +294,7 @@ function Slider() {
             <Typography variant="h4" color="white">
               Anytime, Anywhere
             </Typography>
-            <img src="./images/image 1.png" width="80px" alt="icon" />
+            <img src="./images/image 16.png" width="80px" alt="icon" />
             <Typography variant="p" color="white">
               Coming Soon...
             </Typography>
@@ -291,7 +302,7 @@ function Slider() {
         </Box>
         <Box
           sx={{
-            display: "flex",
+            display: { xs: "none", lg: "flex" },
             flexDirection: "column",
             // backgroundColor: "black",
             // borderRadius: "18.5px",
@@ -342,7 +353,7 @@ function Slider() {
             <Typography variant="h4" color="white">
               Anytime, Anywhere
             </Typography>
-            <img src="./images/image 1.png" width="80px" alt="icon" />
+            <img src="./images/image 16.png" width="80px" alt="icon" />
             <Typography variant="p" color="white">
               Coming Soon...
             </Typography>
@@ -467,7 +478,7 @@ function Slider() {
             <Typography variant="h4" color="white">
               Anytime, Anywhere
             </Typography>
-            <img src="./images/image 1.png" width="80px" alt="icon" />
+            <img src="./images/image 16.png" width="80px" alt="icon" />
             <Typography variant="p" color="white">
               Coming Soon...
             </Typography>
@@ -554,8 +565,8 @@ function Slider() {
             />
           </Box>
         </Box>
-      </motion.div>
-    </div>
+      </motion.Box>
+    </Box>
   );
 }
 
