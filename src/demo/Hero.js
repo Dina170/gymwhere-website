@@ -4,18 +4,30 @@ import React from "react";
 function Hero() {
   return (
     <div>
-      <div id="Home">
-        <Box sx={{ display: "flex", alignItems: "center", margin: "0 80px" }}>
-          <div className="txt-section" style={{ paddingRight: "50px" }}>
+      <div id="HeroHome">
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            margin: { xs: "5px", md: "0 80px" },
+          }}
+        >
+          <Box
+            className="txt-section"
+            sx={{
+              paddingRight: { xs: 0, md: "50px" },
+              textAlign: { xs: "center", md: "left" },
+            }}
+          >
             <Typography
               variant="h3"
               sx={{
                 marginBottom: "10px",
-                fontSize: { xs: "40px" },
-                // padding: { xs: "20px", sm: 0 },
+                fontSize: { xs: "32px", lg: "40px" },
+                padding: { xs: "20px", md: 0 },
                 fontWeight: "bold",
                 color: "black",
-                width: "500px",
+                width: { xs: "400px", lg: "500px" },
               }}
             >
               Unlock the Potential of our Fitness Website
@@ -23,7 +35,7 @@ function Hero() {
             <Typography
               sx={{
                 marginBottom: "30px",
-                display: { xs: "none", sm: "block" },
+                display: { xs: "none", md: "block" },
               }}
               color="text.secondary"
             >
@@ -42,7 +54,7 @@ function Hero() {
                 fontWeight: "bold",
                 letterSpacing: "1px",
                 transition: "0.3s ease",
-                ml: { xs: 2, sm: 0 },
+                // ml: { xs: "auto", md: 0 },
               }}
               className="main-btn"
               onClick={() => {
@@ -51,18 +63,9 @@ function Hero() {
               }}
             >
               Scroll Down
-              {/* <KeyboardArrowRightIcon /> */}
-              {/* <ArrowForwardIcon sx={{ paddingLeft: "10px", width: "50px" }} /> */}
               <div class="down-arrow"></div>
             </Button>
-          </div>
-          {/* <div className="img-section">
-          <img
-            src="./images/Tennis-bro.png"
-            alt="landing-img"
-            style={{ width: "500px", marginLeft: "20px" }}
-          />
-        </div> */}
+          </Box>
         </Box>
       </div>
     </div>

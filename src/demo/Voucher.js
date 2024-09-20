@@ -7,18 +7,29 @@ function Voucher() {
     <div>
       <div id="Voucher">
         <Box
-          sx={{ display: "flex", alignItems: "center", margin: "20px 80px" }}
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            margin: { xs: "5px", md: "0 80px" },
+          }}
         >
-          <div className="txt-section" style={{ paddingRight: "50px" }}>
+          <Box
+            className="txt-section"
+            style={{
+              paddingRight: { xs: 0, md: "50px" },
+              textAlign: { xs: "center", md: "left" },
+            }}
+          >
             <Typography
               variant="h3"
               sx={{
                 marginBottom: "10px",
-                fontSize: { xs: "40px" },
-                // padding: { xs: "20px", sm: 0 },
+                fontSize: { xs: "32px", lg: "40px" },
+                padding: { xs: "20px", md: 0 },
                 fontWeight: "bold",
                 color: "black",
-                width: "500px",
+                width: { xs: "400px", lg: "500px" },
+                textAlign: { xs: "center", md: "left" },
               }}
             >
               Ready to get started?
@@ -26,7 +37,7 @@ function Voucher() {
             <Typography
               sx={{
                 marginBottom: "30px",
-                display: { xs: "none", sm: "block" },
+                display: { xs: "none", md: "block" },
               }}
               color="text.secondary"
             >
@@ -46,7 +57,7 @@ function Voucher() {
                 fontWeight: "bold",
                 letterSpacing: "1px",
                 transition: "0.3s ease",
-                ml: { xs: 2, sm: 0 },
+                ml: { sm: 5, md: 0 },
               }}
               className="main-btn"
               onClick={() => {
@@ -56,16 +67,8 @@ function Voucher() {
             >
               Get Voucher Now
               <KeyboardArrowRightIcon />
-              {/* <ArrowForwardIcon sx={{ paddingLeft: "10px", width: "50px" }} /> */}
             </Button>
-          </div>
-          {/* <div className="img-section">
-          <img
-            src="./images/Tennis-bro.png"
-            alt="landing-img"
-            style={{ width: "500px", marginLeft: "20px" }}
-          />
-        </div> */}
+          </Box>
         </Box>
       </div>
     </div>

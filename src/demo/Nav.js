@@ -32,9 +32,12 @@ function Nav(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box
+      onClick={handleDrawerToggle}
+      sx={{ textAlign: "center", textAlign: { xs: "center", md: "left" } }}
+    >
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        GymWhere
       </Typography>
       <Divider />
       <List>
@@ -74,7 +77,7 @@ function Nav(props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" }, color: "white" }}
+            sx={{ mr: 2, display: { sm: "none" }, color: "black" }}
           >
             <MenuIcon />
           </IconButton>
